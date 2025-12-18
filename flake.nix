@@ -15,6 +15,9 @@
         pythonPackages = ps: with ps; [
           pandas
           requests    # HTTP library
+          #konlpy
+          ebooklib
+          pypdf
         ];
 
         pythonEnv = pkgs.python3.withPackages pythonPackages;
