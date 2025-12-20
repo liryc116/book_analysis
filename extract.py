@@ -1,22 +1,18 @@
 import os
-import ebooklib
-from ebooklib import epub
+from wisup_e2m import EpubParser
 
 def extract(path: str):
-    return extract_epub(path)
+    _, file_extension = os.path.splitext(path)
+
+    if file_extension == '.epub':
+        return extract_epub(path)
+    return
 
 def extract_epub(path: str):
-    book = epub.read_epub(path, {'ignore_ncx': True})
 
-    print(book)
+    parser = EpubParser(engine="unstructured") # epub engines: unstructured
+    epub_data = parser.parse(path)
+    #print(epub_data.text)
 
-    content = []
-    for item in book.get_items():
-        if item.get_type() == ebooklib.ITEM_DOCUMENT:
-            content.append(item.get_content().decode('utf-8'))
-            print('==================================')
-            print('NAME : ', item.get_name())
-            print('LEN : ', len(item.get_content().decode('utf-8')))
-            print('----------------------------------')
-            print(item.get_content().decode('utf-8')[:1024])
-            print('==================================')
+    return epub_data.text
+
