@@ -1,0 +1,32 @@
+anki_endpoint: "http://localhost:8765"
+anki_decks:
+  - name: "Korean Vocabulary by Evita"
+    field: "Korean"
+  - name: "Coréen"
+    field: "Front"
+    strict: false
+
+dictionnary_file: "dict.txt"
+
+ngrams_output: "ngrams.txt"
+max_ngram_len: 10
+ngram_occurence_limit: 10
+
+dictionnary_endpoint: ""
+output_dir: 'output/'
+input:
+  - '/home/cyril/Downloads/books/헤밍웨이, 어니스트 _ 헤밍웨이, - 노인과 바다 (2012_2013, 더클래식).epub'
+  - '/home/cyril/Downloads/books/한강 - 노랑무늬 영원 (2012, 문학과지성사).epub'
+  - '/home/cyril/Downloads/books/한강 - 채식주의자 (2018, (주)창비).epub'
+  - '/home/cyril/Downloads/books/한강 - 서랍에 저녁을 넣어 두었다 -문학과지성 시인선438 (2020, 문학과지성사).epub'
+  - '/home/cyril/Downloads/books/한강 - 소년이 온다 (2016, (주)창비).epub'
+  - '/home/cyril/Downloads/books/EP14. 언어공부의 장점.pdf'
+  - '/home/cyril/Downloads/books/다자이 오사무 - 인간실격, 사양_ 문예세계문학선 036 (2006, 문예출판사).epub'
+  - '/home/cyril/Downloads/books/Harry Potter 2 J. K. 롤링 - 해리 포터와 비밀의 방 (2020).epub'
+  - '/home/cyril/Downloads/books/Harry Potter 4 J. K. 롤링 - 해리 포터와 불의 잔 (2020).epub'
+  - '/home/cyril/Downloads/books/Harry Potter 5 J. K. 롤링 - 해리 포터와 불사조 기사단 (2020).epub'
+  - '/home/cyril/Downloads/books/Harry Potter 6 J. K. 롤링 - 해리 포터와 혼혈 왕자 (2020).epub'
+  - '/home/cyril/Downloads/books/Harry Potter J. K. 롤링 - 해리 포터와 저주받은 아이 1, 2부 (2017).epub'
+  - '/home/cyril/Downloads/books/복음서와 사도행전 _ 신약성경 _ 성경.pdf'
+  - '/home/cyril/Downloads/books/성경 (1911).pdf'
+  - '/home/cyril/Downloads/books/Didi의 한국문화 Podcast Transcript/'
